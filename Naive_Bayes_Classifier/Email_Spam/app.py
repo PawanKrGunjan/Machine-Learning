@@ -25,7 +25,7 @@ def result():
     For rendering results on HTML GUI
     '''
     prediction = model.predict(Massage)
-    return render_template(result=result)
+    return render_template("Label.html", result=result)
 
 
 if __name__ == '__main__':
